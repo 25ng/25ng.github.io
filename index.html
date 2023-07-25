@@ -10,8 +10,8 @@
         手打ちHTMLなのでテキトー。Hugoとか導入したい気もする。
     </p>
     <h2>Popup Window Maker</h2>
-    <input id="pwm_url" type="text" onchange="document.getElementById('pwm_bm').setAttribute('href','javascript:window.open('+document.getElementById('pwm_url').value+',\'_blank\',\'popup\')')"><button
+    <input id="pwm_url" type="text" onchange="document.getElementById('pwm_bm').setAttribute('href','javascript:(function(){window.open('+document.getElementById('pwm_url').value+',\'_blank\',\'popup\')})();')"><button
     onclick="window.open(document.getElementById('pwm_url').value,'_blank',
-    'popup')">go</button><a href="" id="pwm_bm">Bookmark</a>
+    'popup');">go</button><a href="" id="pwm_bm">Bookmark</a>
 </body>
 </html>
