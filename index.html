@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'PlemolJP HS';
+            src: url('/fonts/PlemolJPHS-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'PlemolJP HS';
+            src: url('/fonts/PlemolJPHS-Bold.ttf');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'PlemolJP HS';
+            src: url('/fonts/PlemolJPHS-Italic.ttf');
+            font-weight: normal;
+            font-style: italic;
+        }
+        @font-face {
+            font-family: 'PlemolJP HS';
+            src: url('/fonts/PlemolJPHS-BoldItalic.ttf');
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
 </head>
-<body>
+<body style="font-family: 'PlemolJP HS';">
     <h1>25NG on GitHub</h1>
     <p>
         手打ちHTMLなのでテキトー。Hugoとか導入したい気もする。
@@ -13,5 +39,6 @@
     <input id="pwm_url" type="text" onchange="document.getElementById('pwm_bm').setAttribute('href','javascript:(function(){window.open(\''+document.getElementById('pwm_url').value+'\',\'_blank\',\'popup\')})();')"><button
     onclick="window.open(document.getElementById('pwm_url').value,'_blank',
     'popup');">go</button><a href="" id="pwm_bm">Bookmark</a>
+    <h2>Unit Converter</h2>
 </body>
 </html>
