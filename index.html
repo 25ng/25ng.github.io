@@ -51,7 +51,7 @@
     <h2>Unit Converter</h2>
     <h3>dot/cm -> dot/inch</h3>
     <input id="ipt_dpc2dpi" type="number" value="100" onchange="document.getElementById('res_dpc2dpi').innerHTML=document.getElementById('ipt_dpc2dpi').value*2.54">dot/cm -> <span id="res_dpc2dpi">254</span> dot/inch
-    <h3>dot/inch -> dot/cm</h3>
-    <input id="ipt_dpi2dpc" type="number" value="254" onchange="document.getElementById('res_dpi2dpc').innerHTML=document.getElementById('ipt_dpi2dpc').value/2.54">dot/inch -> <span id="res_dpi2dpc">100</span> dot/cm
+    <h3>dot/inch -> dot/cm (cm/dot)</h3>
+    <input id="ipt_dpi2dpc" type="number" value="254" onchange="document.getElementById('res_dpi2dpc').innerHTML=document.getElementById('ipt_dpi2dpc').value/2.54;document.getElementById('res2_dpi2dpc').innerHTML=1/(document.getElementById('ipt_dpi2dpc').value/2.54)">dot/inch -> <span id="res_dpi2dpc">100</span> dot/cm = <span id="res2_dpi2dpc">100</span> dot/cm
 </body>
 </html>
