@@ -2,8 +2,16 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>2ng.github.io</title>
     <style>
+        body {
+            background-color: #000;
+            color: #ccc;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            background-color: #ccc;
+            color: #000;
+        }
         @font-face {
             font-family: 'PlemolJP HS';
             src: url('/fonts/PlemolJPHS-Regular.ttf');
@@ -40,5 +48,9 @@
     onclick="window.open(document.getElementById('pwm_url').value,'_blank',
     'popup');">go</button><a href="" id="pwm_bm">Bookmark</a>
     <h2>Unit Converter</h2>
+    <h3>dot/cm -> dot/inch</h3>
+    <input id="ipt_dpc2dpi" type="number" value="100" onchange="document.getElementById('res_dpc2dpi').innerHTML=document.getElementById('ipt_dpc2dpi')*2.54"> dot/cm -> <span id="res_dpc2dpi">254</span>dot/inch
+    <h3>dot/inch -> dot/cm</h3>
+    <input id="ipt_dpi2dpc" type="number" value="254" onchange="document.getElementById('res_dpi2dpc').innerHTML=document.getElementById('ipt_dpi2dpc')*2.54"> dot/inch -> <span id="res_dpi2dpc">100</span>dot/cm
 </body>
 </html>
