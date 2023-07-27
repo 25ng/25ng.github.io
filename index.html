@@ -38,9 +38,9 @@
         }
     </style>
 </head>
-<body style="font-family: 'PlemolJP HS';">
+<body style="font-family: 'PlemolJP HS';" onload="let modified=new Date(document.lastModified);let year=modified.getFullYear();let month=modified.getMonth()+1;let date=modified.getDate();let hours=modified.getHours();let minutes=modified.getMinutes();let seconds=modified.getSeconds();document.getElementById('upd').innerHTML=year+'/'+month+'/'+date+' '+hours+':'+minutes+':'+seconds">
     <h1>25NG on GitHub</h1>
-    <p onload="let modified=new Date(document.lastModified);let year=modified.getFullYear();let month=modified.getMonth()+1;let date=modified.getDate();let hours=modified.getHours();let minutes=modified.getMinutes();let seconds=modified.getSeconds();document.getElementById('upd').innerHTML=year+'/'+month+'/'+date+' '+hours+':'+minutes+':'+seconds" id="upd"></p>
+    <p id="upd"></p>
     <p>
         手打ちHTMLなのでテキトー。Hugoとか導入したい気もする。
     </p>
